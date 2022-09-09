@@ -10,7 +10,7 @@ function NavigationBar() {
     const [responsiveDisplay, setDisplay] = useState("none")
 
   return (
-      <Flex position="fixed" direction="column" justify="space-between" bgColor="#F2E9E4" w="full" h={ responsiveDisplay === "none" ? "min-content" : ["100vh", "100vh", "100vh", "min-content", "min-content"]} p="3" px="8">
+      <Flex position="fixed" top="0" direction="column" justify="space-between" bgColor="#F2E9E4" w="full" h={ responsiveDisplay === "none" ? "min-content" : ["100vh", "100vh", "100vh", "min-content", "min-content"]} p="3" px="8">
         <Flex alignItems="center" justify="space-between" display={["flex", "flex", "flex", "none", "none"]}>
             <Box onClick={() => { responsiveDisplay === "none" ? setDisplay("flex") : setDisplay("none")}}><FiMenu /></Box>
             <Box>
