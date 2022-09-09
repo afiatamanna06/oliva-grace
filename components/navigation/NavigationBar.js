@@ -44,6 +44,9 @@ function NavigationBar() {
                         <ChakraLink>{name}</ChakraLink>
                     </Link>
                 ))}
+                <Flex display={["flex", "flex", "flex", "none", "none"]}>
+                    <SocialSites color="rgba(0, 0, 0, .55)" />
+                </Flex>
             </Flex>
             <Box w="15%">
                 <InputGroup>
