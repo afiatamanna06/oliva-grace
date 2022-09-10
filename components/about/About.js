@@ -4,7 +4,7 @@ import AboutDescription from './AboutDescription'
 
 function About() {
   return (
-    <Box m="8" pt="128">
+    <Box m="8" pt="128" pb="70">
         <Center>
             <Flex maxH="30rem" maxW="70rem" alignItems="center" direction={["column", "column", "column", "row", "row"]} gap={[8, 8, 8, 28, 28]}>
                 <Image src="/about_img.png" flex="1" objectFit="cover" w="30rem" h="30rem" alt="" />
