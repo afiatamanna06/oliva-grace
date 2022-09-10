@@ -2398,6 +2398,11 @@ next@12.3.0:
     "@next/swc-win32-ia32-msvc" "12.3.0"
     "@next/swc-win32-x64-msvc" "12.3.0"
 
+nuka-carousel@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-5.3.0.tgz#c09ae2f9776753c93ac26595f63d193174b0d837"
+  integrity sha512-rl04nehZwOp8msr7B5OhvkVmplnZpYE3gVMWFemeXlwNT8RMgA3AGEQhO6CdkuB5NnHtUnOrZMJsRcQbW/PpjA==
+
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
