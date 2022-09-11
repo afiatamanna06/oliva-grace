@@ -1,9 +1,63 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Center, IconButton, useBreakpointValue } from '@chakra-ui/react'
+import Carousel from 'nuka-carousel'
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import ServicesCard from './ServicesCard';
+import servicesList from './ServicesList';
 
 function Services() {
-  return (
-    <Box w="full">
 
+    const numberOfCarouselComponents = useBreakpointValue({
+        base: 1,
+        sm: 1,
+        md: 2,
+        lg: 3,
+        xl: 3,
+      });
+    
+  return (
+    <Box w="full" mt={[300, 300, 300, 0, 0]} position="relative">
+        <Center>
+            <Box maxW={["100%", "100%", "100%", "60rem", "60rem"]}>
+                <Carousel 
+                    autoplay={true}
+                    slidesToShow={numberOfCarouselComponents}
+                    renderCenterLeftControls={
+                    ({ previousSlide }) => (
+                        <IconButton
+                        aria-label="Previous slide"
+                        icon={<FiChevronLeft size={60} />}
+                        onClick={previousSlide}
+                        color="black"
+                        colorScheme="skyblue"
+                        sx={{
+                            transform: ["none", "none", "translate(-50%, 0)", "translate(-50%, 0)"],
+                        }}
+                        />
+                    )
+                    }
+                    renderCenterRightControls={
+                    ({ nextSlide }) => (
+                        <IconButton
+                        aria-label="Next slide"
+                        icon={<FiChevronRight size={60} />}
+                        onClick={nextSlide}
+                        color="black"
+                        colorScheme="skyblue"
+                        sx={{
+                            transform: ["none", "none", "translate(50%, 0)", "translate(50%, 0)"],
+                        }}
+                        />
+                    )
+                    } 
+                    wrapAround>
+                    {servicesList.map(({image, title, description, price}) => (
+                        <Center pb="20" key={title}>
+                            <ServicesCard image={image} title={title} description={description} price={price} />
+                        </Center>
+                    ))}
+                </Carousel>
+            </Box>
+        </Center>
     </Box>
   )
 }
