@@ -4,7 +4,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 function Testimonial() {
   return (
-    <Box w="full" mb="10rem">
+    <Box w="full" mb="6rem">
         <Center>
             <Box maxW={["100%", "100%", "100%", "60rem", "60rem"]}>
                 <Carousel 
