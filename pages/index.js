@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import About from '../components/about/About'
+import Contact from '../components/contact/Contact'
 import Testimonial from '../components/testimonial/Testimonial'
 import Work from '../components/work/Work'
 
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Work />
       <Testimonial />
+      <Contact />
     </div>
   )
 }
