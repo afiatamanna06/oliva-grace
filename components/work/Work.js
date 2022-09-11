@@ -3,7 +3,7 @@ import WorkDescription from './WorkDescription'
 
 function Work() {
   return (
-    <Box bgColor="#F2E9E4" w="full" h={["65rem", "65rem", "65rem", "32rem", "32rem"]} my="20rem" position="relative">
+    <Box bgColor="#F2E9E4" w="full" h={["65rem", "65rem", "65rem", "32rem", "32rem"]} mt="20rem" mb="10rem" position="relative">
         <Image src="/Work_bg.png" zIndex={1} w="30rem" objectFit="cover" h="40rem" position="absolute" top={["20%", "20%", "20%", "-25%", "-25%"]} left={["0%", "0%", "0%", "35%", "35%"]} alt="" />
         <Box w="full" position="relative" zIndex={1}>
           <Center>

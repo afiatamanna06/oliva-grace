@@ -6,7 +6,7 @@ function Testimonial() {
   return (
     <Box w="full">
         <Center>
-            <Box maxW={["100%", "100%", "100%", "50rem", "50rem"]}>
+            <Box maxW={["100%", "100%", "100%", "60rem", "60rem"]}>
                 <Carousel 
                     autoplay={true}
                     renderCenterLeftControls={
@@ -40,8 +40,20 @@ function Testimonial() {
                     wrapAround>
                     <Center pb="50">
                         <Flex direction="column" px={["12", "12", "12", "20", "40"]}>
-                            <Heading>WHAT MY CLIENTS ARE SAYING</Heading>
-                            <Box>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis augue bibendum pulvinar ut egestas lorem arcu maecenas. Elementum et, phasellus pharetra, lobortis facilisis condimentum non ullamcorper. Proin commodo malesuada maecenas dis vitae. Ornare quam senectus in convallis.</Box>
+                            <Heading textAlign="center" mb="4">WHAT MY CLIENTS ARE SAYING</Heading>
+                            <Box textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis augue bibendum pulvinar ut egestas lorem arcu maecenas. Elementum et, phasellus pharetra, lobortis facilisis condimentum non ullamcorper. Proin commodo malesuada maecenas dis vitae. Ornare quam senectus in convallis.</Box>
+                        </Flex>
+                    </Center>
+                    <Center pb="50">
+                        <Flex direction="column" px={["12", "12", "12", "20", "40"]}>
+                            <Heading textAlign="center" mb="4">WHAT MY CLIENTS ARE SAYING</Heading>
+                            <Box textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis augue bibendum pulvinar ut egestas lorem arcu maecenas. Elementum et, phasellus pharetra, lobortis facilisis condimentum non ullamcorper. Proin commodo malesuada maecenas dis vitae. Ornare quam senectus in convallis.</Box>
+                        </Flex>
+                    </Center>
+                    <Center pb="50">
+                        <Flex direction="column" px={["12", "12", "12", "20", "40"]}>
+                            <Heading textAlign="center" mb="4">WHAT MY CLIENTS ARE SAYING</Heading>
+                            <Box textAlign="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis augue bibendum pulvinar ut egestas lorem arcu maecenas. Elementum et, phasellus pharetra, lobortis facilisis condimentum non ullamcorper. Proin commodo malesuada maecenas dis vitae. Ornare quam senectus in convallis.</Box>
                         </Flex>
                     </Center>
                 </Carousel>
