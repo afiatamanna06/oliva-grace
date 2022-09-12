@@ -15,6 +15,27 @@ a {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #F2E9E4, #F2E3E3, transparent);
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #F2E9E4, #F2E3E3, transparent);
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
