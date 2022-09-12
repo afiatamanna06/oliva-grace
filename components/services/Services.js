@@ -17,7 +17,7 @@ function Services() {
   return (
     <Box w="full" id="services" fontFamily="'Poppins', sans-serif" pt={[300, 300, 300, 100, 100]} position="relative">
         <Center>
-            <Box maxW={["100%", "100%", "100%", "60rem", "60rem"]}>
+            <Box maxW={["100%", "100%", "100%", "65rem", "65rem"]}>
                 <Carousel 
                     autoplay={true}
                     slidesToShow={numberOfCarouselComponents}
