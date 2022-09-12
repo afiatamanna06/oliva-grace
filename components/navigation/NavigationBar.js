@@ -37,7 +37,7 @@ function NavigationBar() {
                     </Link>
                 ))}
                 <Link href="/" passHref>
-                    <Heading fontFamily="'Poppins', sans-serif" letterSpacing={7} color="black" display={["none", "none", "none", "block", "block"]}>OLIVA GRACE</Heading>
+                    <Heading cursor="pointer" fontFamily="'Poppins', sans-serif" letterSpacing={7} color="black" display={["none", "none", "none", "block", "block"]}>OLIVA GRACE</Heading>
                 </Link>
                 {navigationLinks.slice(2, 4).map(({name, path}) => (
                     <Link key={name} href={path} passHref>

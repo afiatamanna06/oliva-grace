@@ -7,7 +7,7 @@ function SocialSites({ color }) {
     <Flex gap={2}>
         {socialLinks.map(({Icon, path}) => (
             <Link key={path} href={path} passHref>
-                <Icon color={color} size={22} />
+                <Icon cursor="pointer" color={color} size={22} />
             </Link>
         ))}
     </Flex>
