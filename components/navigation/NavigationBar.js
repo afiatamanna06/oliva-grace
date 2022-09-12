@@ -10,7 +10,7 @@ function NavigationBar() {
     const [responsiveDisplay, setDisplay] = useState("none")
 
   return (
-      <Flex position="fixed" zIndex={100} top="0" direction="column" justify="space-between" bgColor="#F2E9E4" w="full" h={ responsiveDisplay === "none" ? "min-content" : ["100vh", "100vh", "100vh", "min-content", "min-content"]} p="3" px="8">
+      <Flex fontFamily="'Poppins', sans-serif" letterSpacing={3} position="fixed" zIndex={100} top="0" direction="column" justify="space-between" bgColor="#F2E9E4" w="full" h={ responsiveDisplay === "none" ? "min-content" : ["100vh", "100vh", "100vh", "min-content", "min-content"]} p="3" px="8">
         <Flex alignItems="center" justify="space-between" display={["flex", "flex", "flex", "none", "none"]}>
             <Box onClick={() => { responsiveDisplay === "none" ? setDisplay("flex") : setDisplay("none")}}><FiMenu /></Box>
             <Box>
@@ -18,7 +18,7 @@ function NavigationBar() {
                     <Input 
                         w="10rem" 
                         placeholder="Search" 
-                        _placeholder={{ color: "rgba(0, 0, 0, .85)", fontStyle: "italic" }} 
+                        _placeholder={{ color: "rgba(0, 0, 0, .85)", fontStyle: "italic", letterSpacing: 3 }} 
                         variant="unstyled"
                         borderRadius="none"
                         _focus={{ bg: "transparent", borderBottom: "1px", borderColor: "rgba(0, 0, 0, .55)" }}/>
@@ -37,7 +37,7 @@ function NavigationBar() {
                     </Link>
                 ))}
                 <Link href="/" passHref>
-                    <Heading color="black" display={["none", "none", "none", "block", "block"]}>OLIVA GRACE</Heading>
+                    <Heading fontFamily="'Poppins', sans-serif" letterSpacing={7} color="black" display={["none", "none", "none", "block", "block"]}>OLIVA GRACE</Heading>
                 </Link>
                 {navigationLinks.slice(2, 4).map(({name, path}) => (
                     <Link key={name} href={path} passHref>
@@ -52,7 +52,7 @@ function NavigationBar() {
                 <InputGroup>
                     <Input 
                         placeholder="Search" 
-                        _placeholder={{ color: "rgba(0, 0, 0, .85)", fontStyle: "italic" }} 
+                        _placeholder={{ color: "rgba(0, 0, 0, .85)", fontStyle: "italic", letterSpacing: 3 }} 
                         display={["none", "none", "none", "block", "block"]} 
                         variant="unstyled"
                         borderRadius="none"
