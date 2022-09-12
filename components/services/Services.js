@@ -16,6 +16,7 @@ function Services() {
     
   return (
     <Box w="full" id="services" fontFamily="'Poppins', sans-serif" pt={[300, 300, 300, 100, 100]} position="relative">
+        <Box minH="25rem" w="17rem" zIndex={-10} position="absolute" bg="#F2E9E4" top={["25%", "25%", "25%", "5%", "5%"]} left={["5%", "5%", "5%", "13%", "13%"]}></Box>
         <Center>
             <Box maxW={["100%", "100%", "100%", "65rem", "65rem"]}>
                 <Carousel 
