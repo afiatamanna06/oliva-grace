@@ -3,7 +3,7 @@ import Link from "next/link"
 
 function AboutDescription() {
   return (
-    <Box w="full" id="about" bg="#F2E9E4" h={["25rem", "25rem", "25rem", "30rem", "30rem"]}>
+    <Box w="full" bg="#F2E9E4" h={["25rem", "25rem", "25rem", "30rem", "30rem"]}>
         <Center>
             <Flex direction="column" fontFamily="'Poppins', sans-serif" alignItems="center" justify="center" h={["25rem", "25rem", "25rem", "30rem", "30rem"]} p="9">
                 <Heading mb="4" letterSpacing={4} fontSize="3xl" fontWeight="semibold">ABOUT ME</Heading>

@@ -33,7 +33,7 @@ function NavigationBar() {
             <Flex gap={[5, 5, 5, 30, 50, 120]} color="rgba(0, 0, 0, .85)" direction={["column", "column", "column", "row", "row"]}  display={[responsiveDisplay, responsiveDisplay, responsiveDisplay, "flex", "flex"]} py={["4", "4", "4", "0", "0"]} alignItems={["start", "start", "start", "center", "center"]} justify={["start", "start", "start", "center", "center"]} w={["75%"]}>
                 {navigationLinks.slice(0, 2).map(({name, path}) => (
                     <Link key={name} href={path} passHref>
-                        <ChakraLink>{name}</ChakraLink>
+                        <ChakraLink onClick={() => { responsiveDisplay === "flex" ? setDisplay("none") : setDisplay("flex") }}>{name}</ChakraLink>
                     </Link>
                 ))}
                 <Link href="/" passHref>
@@ -41,7 +41,7 @@ function NavigationBar() {
                 </Link>
                 {navigationLinks.slice(2, 4).map(({name, path}) => (
                     <Link key={name} href={path} passHref>
-                        <ChakraLink>{name}</ChakraLink>
+                        <ChakraLink onClick={() => { responsiveDisplay === "flex" ? setDisplay("none") : setDisplay("flex") }}>{name}</ChakraLink>
                     </Link>
                 ))}
                 <Flex display={["flex", "flex", "flex", "none", "none"]}>
